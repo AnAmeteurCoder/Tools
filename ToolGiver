@@ -1,0 +1,11 @@
+-- Made by SprinHub.
+function b.OnInvoke(response) if response == "Copy Link" then if setclipboard then setclipboard("discord.gg/ujp5Uu6gKy") end end end
+game:GetService("StarterGui"):SetCore("SendNotification", {Title = This wan't made by me.", Text = "I will join SprinHub discord", Duration = 5, Callback = b, Button1 = "Copy Link"})
+
+
+for i, v in pairs (game:GetService("ReplicatedStorage").Gear:GetChildren()) do
+if v:IsA("Tool") then
+tools = v:Clone()
+tools.Parent = game:GetService("Players").LocalPlayer:FindFirstChild("Backpack")
+end
+end
